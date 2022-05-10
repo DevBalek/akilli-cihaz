@@ -2,29 +2,31 @@ package islemler;
 
 import java.util.Random;
 
+import Sicaklik.ISicaklikAlgilayici;
+
 public class Islem implements IIslem{
     IEyleyici eyleyici;
+    ISicaklikAlgilayici sicaklikAlgilayici ;
 
-
-    public Islem(IEyleyici eyleyici) {
+    public Islem(IEyleyici eyleyici, ISicaklikAlgilayici sicaklikAlgilayici) {
         this.eyleyici = eyleyici;
+        this.sicaklikAlgilayici=sicaklikAlgilayici;
     }
+    
 
     @Override
     public void sogutucuAc() {
-        eyleyici.sogutucuAc();        
+        eyleyici.sogutucuAc();    
     }
 
     @Override
     public void sogutucuKapat() {
-         eyleyici.sogutucuKapat();
+        eyleyici.sogutucuKapat();
     }
 
     @Override
     public void sicaklikGoruntule() {
-        Random rnd = new Random();
-        int random = rnd.nextInt(0,50);
-        System.out.println("Sicaklik deger: " + random);        
+        sicaklikAlgilayici.sicaklikOku();           
     }
     
 }

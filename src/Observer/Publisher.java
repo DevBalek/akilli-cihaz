@@ -24,7 +24,7 @@ public class Publisher implements IPublisher{
     }
 
     @Override
-    public void acilDurumBildirimi(String mesaj, String level, IEyleyici eyleyici) {
+    public void acilDurumBildirimi(String mesaj, String level, IEyleyici eyleyici) throws InterruptedException {
         String[] bolum = level.split(" ");
         int sicaklikDegeri = Integer.parseInt(bolum[1]);
 

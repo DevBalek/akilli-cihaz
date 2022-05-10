@@ -2,7 +2,9 @@ package islemler;
 
 public interface IEyleyici {
 
-    void sogutucuAc();
-    void sogutucuKapat();
+    int sonDeger = 0;
+
+    int sogutucuAc(int sonDeger)throws InterruptedException ;
+    int sogutucuKapat(int sonDeger)throws InterruptedException ;
     
 }

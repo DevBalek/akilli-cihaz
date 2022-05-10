@@ -1,5 +1,5 @@
 package Sicaklik;
 
 public interface ISicaklikAlgilayici {
-    String sicaklikOku();
+    int sicaklikOku();    
 }

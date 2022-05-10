@@ -22,7 +22,7 @@ public class PostgreVeritabaniSurucusu implements IVeritabaniSurucusu{
     @Override
     public boolean giris(String kullaniciAdi, String sifre) {
         
-        Connection myConnection = connect();
+        Connection myConnection = connect();        
                 
         return false;
     }

@@ -18,5 +18,6 @@ public class EyleyiciHotspot implements IEyleyici{
         System.out.println("HOTSPOT | Sogutucu kapandi.");   
         return sonDeger + 10;
     }
+
     
 }

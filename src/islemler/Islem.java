@@ -6,31 +6,29 @@ import Sicaklik.ISicaklikAlgilayici;
 public class Islem implements IIslem{
     IEyleyici eyleyici;
     ISicaklikAlgilayici sicaklikAlgilayici ;
+    int sonDeger;
 
     public Islem(IEyleyici eyleyici, ISicaklikAlgilayici sicaklikAlgilayici) {
         this.eyleyici = eyleyici;
-        this.sicaklikAlgilayici=sicaklikAlgilayici;
+        this.sicaklikAlgilayici = sicaklikAlgilayici;
+        sonDeger = 0;
     }
     
 
     @Override
     public void sogutucuAc() throws InterruptedException{
-        String[] string = sicaklikAlgilayici.sicaklikOku().split(" ");
-        int sicaklik = Integer.parseInt(string[4]);
-        eyleyici.sogutucuAc(sicaklik);    
+        
+        sonDeger = eyleyici.sogutucuAc(sicaklikAlgilayici.sicaklikOku());
     }
 
     @Override
     public void sogutucuKapat() throws InterruptedException{
-        String[] string = sicaklikAlgilayici.sicaklikOku().split(" ");
-        int sicaklik = Integer.parseInt(string[4]);
-        
-        eyleyici.sogutucuKapat(sicaklik);
+        sonDeger = eyleyici.sogutucuKapat(sicaklikAlgilayici.sicaklikOku());
     }
 
     @Override
     public void sicaklikGoruntule() {
-        sicaklikAlgilayici.sicaklikOku();           
+        sonDeger = sicaklikAlgilayici.sicaklikOku();
     }
     
 }

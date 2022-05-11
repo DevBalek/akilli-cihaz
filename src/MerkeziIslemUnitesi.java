@@ -32,7 +32,7 @@ public class MerkeziIslemUnitesi {
     }
 
     public void sistemiBaslat() throws InterruptedException {
-                        
+        AkilliCihaz.durum = Durum.bekleme;
         secenekler();
 
     }
@@ -46,11 +46,14 @@ public class MerkeziIslemUnitesi {
                 clearScreen();
                 System.out.println("\n-----\nMerkezi Islem Unitesi\n-----\n1 - Sicaklik Goruntule \n2 - Soğutucu Aç\n3 - Soğutucu Kapat\n------\nq-Oturum Sonlandir");
                 
+
                 secim = scanner.nextLine();
-                
+                AkilliCihaz.durum = Durum.algilama;
                 
                 switch (secim) {
                     case "1":
+                    AkilliCihaz.durum = Durum.islemYapiliyor;
+
                         sicaklikAlgilayici.sicaklikOku();
                         if (sicaklikAlgilayici.getSicaklik() < 0) {
                             p.notify("Sicaklik 0 derecenin altinda",eyleyici);
@@ -60,6 +63,8 @@ public class MerkeziIslemUnitesi {
                     break;
                     
                     case "2":
+                    AkilliCihaz.durum = Durum.islemYapiliyor;
+
                         sicaklikAlgilayici.setSicaklik(eyleyici.sogutucuAc(sicaklikAlgilayici.getSicaklik()));
                         if (sicaklikAlgilayici.getSicaklik() < 0) {
                             p.notify("Sicaklik 0 derecenin altinda",eyleyici);
@@ -68,8 +73,9 @@ public class MerkeziIslemUnitesi {
                         }            
                     break;
                     
-                    case "3":                
-                        sicaklikAlgilayici.setSicaklik(eyleyici.sogutucuKapat(sicaklikAlgilayici.getSicaklik())); 
+                    case "3":       
+                    AkilliCihaz.durum = Durum.islemYapiliyor;         
+                        sicaklikAlgilayici.setSicaklik(eyleyici.sogutucuKapat(sicaklikAlgilayici.getSicaklik()));                                              
                         if (sicaklikAlgilayici.getSicaklik() < 0) {
                             p.notify("Sicaklik 0 derecenin altinda",eyleyici);
                         }else if (sicaklikAlgilayici.getSicaklik() > 50) {
@@ -78,19 +84,23 @@ public class MerkeziIslemUnitesi {
                     break;
                     
                     case "q":
+                    AkilliCihaz.durum = Durum.islemYapiliyor;
                         System.out.println("Sistem Kapaniyor...");
                         Thread.sleep(200);
+                    AkilliCihaz.durum = Durum.kapali;
                         System.exit(0);
                     break;
         
                     default:
                         break;
                 }        
-                
                 System.out.println("Kapatmak icin q, devam etmek icin herhangi bir tusa basiniz");                
+                
+                AkilliCihaz.durum = Durum.algilama;    
                 secim = scanner.nextLine();
 
             } while (!secim.equals("q"));
+            AkilliCihaz.durum = Durum.kapali;
         }
                 
     }

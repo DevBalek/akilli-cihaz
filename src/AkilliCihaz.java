@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AkilliCihaz {
 
-    static Durum durum = Durum.kapali;
+    public static Durum durum = Durum.kapali;
 
     public static void main(String[] args) throws Exception {
         durum = Durum.acilisTestiYapiliyor;
@@ -10,6 +10,16 @@ public class AkilliCihaz {
         
         
         System.out.println("Sistem Acildi");
+        
+        durum = Durum.bekleme;
+        
+        // durum = Durum.servisDisi;
+
+        if(durum == Durum.servisDisi){
+            System.out.println("Sistem Servis Disidir.");
+            System.exit(1);
+        }
+
         try (Scanner scanner = new Scanner(System.in)) {
             do {
                 clearScreen();

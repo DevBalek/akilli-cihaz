@@ -2,17 +2,19 @@ package Sicaklik;
 
 import java.util.Random;
 
-public class SicaklikAlgilayiciCelcius implements ISicaklikAlgilayici{
-    int sicaklik;    
-
-    public SicaklikAlgilayiciCelcius() {
-        Random rnd = new Random();        
-        this.sicaklik =  rnd.nextInt(-10,60);              
-    }
+public class SicaklikAlgilayici2 implements ISicaklikAlgilayici{
+    int sicaklik;
     
+
+    public SicaklikAlgilayici2() {
+
+        Random rnd = new Random();        
+        this.sicaklik =  rnd.nextInt(-10,60);        
+    }
+
     @Override
     public void sicaklikOku() {
-        System.out.println("Celcius | Sicaklik Degeri " + sicaklik);        
+        System.out.println("2 | Sicaklik Degeri " + sicaklik);        
     }
 
     @Override
@@ -29,5 +31,5 @@ public class SicaklikAlgilayiciCelcius implements ISicaklikAlgilayici{
     public void make() {
         System.out.println("Sicaklik Degeri Ekrana Yazildi.");        
     }
-
+    
 }

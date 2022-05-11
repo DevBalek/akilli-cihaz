@@ -1,26 +1,32 @@
 import java.util.Scanner;
 
+import Factory.IFactoryMaker;
+import Factory.SicaklikAlgilayiciFactory;
+import Factory.EyleyiciFactory;
+import Factory.FactoryIstemci;
 import Observer.Subscriber2;
 import Observer.Publisher;
 import Observer.Subscriber1;
 import Sicaklik.ISicaklikAlgilayici;
-import Sicaklik.SicaklikAlgilayiciCelcius;
-import islemler.EyleyiciArcelik;
 import islemler.IEyleyici;
 
 public class MerkeziIslemUnitesi {
 
         
     ISicaklikAlgilayici sicaklikAlgilayici;
+    IFactoryMaker eyleyicifFactoryMaker;
+    IFactoryMaker sicaklikAlgilayicifFactoryMaker;
     IEyleyici eyleyici;
     Publisher p;
 
-    
-
     public MerkeziIslemUnitesi() {        
-        sicaklikAlgilayici = new SicaklikAlgilayiciCelcius();
+
+        FactoryIstemci mergeFactoryModules = new FactoryIstemci(new EyleyiciFactory(), new SicaklikAlgilayiciFactory());
+
+        sicaklikAlgilayici = (ISicaklikAlgilayici) mergeFactoryModules.sicaklikAlgilayiciModul();
+        eyleyici = (IEyleyici) mergeFactoryModules.eyleyiciModul();
+        
         p = new Publisher();
-        eyleyici = new EyleyiciArcelik();
         p.attach(new Subscriber1());       
         p.attach(new Subscriber2());        
     }

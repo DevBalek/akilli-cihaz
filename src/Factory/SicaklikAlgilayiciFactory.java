@@ -1,12 +1,12 @@
 package Factory;
 
-import Sicaklik.SicaklikAlgilayiciCelcius;
+import Sicaklik.SicaklikAlgilayici1;
 
 public class SicaklikAlgilayiciFactory implements IFactoryMaker{
 
     @Override
     public IMakeModule factoryMakerMethod() {
-        SicaklikAlgilayiciCelcius sicaklikAlgilayici = new SicaklikAlgilayiciCelcius();
+        SicaklikAlgilayici1 sicaklikAlgilayici = new SicaklikAlgilayici1();
         return sicaklikAlgilayici;
     }
     

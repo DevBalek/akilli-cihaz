@@ -1,10 +1,10 @@
 package Factory;
 
-public class MergeFactoryModules {
+public class FactoryIstemci {
     IFactoryMaker eyleyici;
     IFactoryMaker sicaklikAlgilayici;
 
-    MergeFactoryModules(IFactoryMaker eyleyici, IFactoryMaker sicaklikAlgilayici) {
+    public FactoryIstemci(IFactoryMaker eyleyici, IFactoryMaker sicaklikAlgilayici) {
         this.eyleyici = eyleyici;
         this.sicaklikAlgilayici = sicaklikAlgilayici;
     }

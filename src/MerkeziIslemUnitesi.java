@@ -33,6 +33,8 @@ public class MerkeziIslemUnitesi {
 
     public void sistemiBaslat() throws InterruptedException {
         AkilliCihaz.durum = Durum.bekleme;
+        
+        System.out.println("Giris Basarili...");
         secenekler();
 
     }

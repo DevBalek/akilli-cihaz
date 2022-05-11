@@ -1,5 +1,9 @@
 package Sicaklik;
 
-public interface ISicaklikAlgilayici {
-    int sicaklikOku();    
+import Factory.IMakeModule;
+
+public interface ISicaklikAlgilayici extends IMakeModule{
+    void sicaklikOku();    
+    int getSicaklik();
+    void setSicaklik(int sicaklik);
 }

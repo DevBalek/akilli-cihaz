@@ -19,5 +19,9 @@ public class EyleyiciHotspot implements IEyleyici{
         return sonDeger + 10;
     }
 
-    
+    @Override
+    public void make() {
+        System.out.println("Sogutucu Acma/Kapatma islemi gerceklestirildi.");        
+    }
+
 }

@@ -23,5 +23,10 @@ public class EyleyiciArcelik implements IEyleyici{
         sonDeger += 10;
         return sonDeger;
     }
+
+    @Override
+    public void make() {
+        System.out.println("Sogutucu Acma/Kapatma islemi gerceklestirildi.");        
+    }
     
 }

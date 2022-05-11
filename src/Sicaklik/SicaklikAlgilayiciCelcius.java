@@ -3,16 +3,31 @@ package Sicaklik;
 import java.util.Random;
 
 public class SicaklikAlgilayiciCelcius implements ISicaklikAlgilayici{
+    int sicaklik;    
+
+    public SicaklikAlgilayiciCelcius() {
+        Random rnd = new Random();        
+        this.sicaklik =  rnd.nextInt(-10,60);              
+    }
+    
+    @Override
+    public void sicaklikOku() {
+        System.out.println("Celcius | Sicaklik Degeri " + sicaklik);        
+    }
 
     @Override
-    public int sicaklikOku() {
+    public int getSicaklik() {        
+        return sicaklik;
+    }
 
-        Random rnd = new Random();
-        int random= rnd.nextInt(0,200);
-        
-        System.out.println("Celcius | Sicaklik Degeri " + random);
-        
-        return random;
+    @Override
+    public void setSicaklik(int sicaklik) {
+        this.sicaklik = sicaklik;        
+    }
+
+    @Override
+    public void make() {
+        System.out.println("Sicaklik Degeri Ekrana Yazildi.");        
     }
 
 }

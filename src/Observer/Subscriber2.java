@@ -1,10 +1,10 @@
 package Observer;
 
-public class EsikAlti implements IObserver{
+public class Subscriber2 implements IObserver{
 
     @Override
     public void acilDurum(String message) throws InterruptedException {
-        System.out.println("System | " + message);        
+        System.out.println("Sub2 | " + message);        
     }
     
 }

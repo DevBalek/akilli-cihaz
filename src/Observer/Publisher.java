@@ -9,7 +9,7 @@ public class Publisher implements IPublisher{
 
     List<IObserver>observerList;
 
-    Publisher(){
+    public Publisher(){
         observerList = new ArrayList<>();
     }
 
@@ -24,12 +24,10 @@ public class Publisher implements IPublisher{
     }
 
     @Override
-    public void notify(String mesaj, String level, IEyleyici eyleyici) throws InterruptedException {
-        String[] bolum = level.split(" ");
-        int sicaklikDegeri = Integer.parseInt(bolum[1]);
-
+    public void notify(String mesaj ,IEyleyici eyleyici) throws InterruptedException {        
+        
         for (IObserver iObserver : observerList) {
-            iObserver.acilDurum(sicaklikDegeri, eyleyici);
+            iObserver.acilDurum(mesaj);
         }
         
     }

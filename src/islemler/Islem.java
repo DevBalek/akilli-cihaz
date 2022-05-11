@@ -16,9 +16,8 @@ public class Islem implements IIslem{
     
 
     @Override
-    public void sogutucuAc() throws InterruptedException{
-        
-        sonDeger = eyleyici.sogutucuAc(sicaklikAlgilayici.sicaklikOku());
+    public void sogutucuAc() throws InterruptedException{        
+        sonDeger = eyleyici.sogutucuAc(sicaklikAlgilayici.sicaklikOku());        
     }
 
     @Override

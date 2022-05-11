@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" modified="2022-05-11T12:46:52.646Z" 
+agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 
+(KHTML, like Gecko) Version/15.4 Safari/605.1.15" 
+etag="bBKe2qir2mEfh9avYBIY" version="18.0.2" type="github">
+  <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
+    <mxGraphModel dx="611" dy="1658" grid="1" gridSize="10" guides="1" 
+tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" 
+pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7baba1c4bc27f4b0-2" value=":Islem&amp;nbsp;" 
+style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;size=40;" 
+parent="1" vertex="1">
+          <mxGeometry x="230" y="80" width="100" height="260" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-10" value="" 
+style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" 
+parent="7baba1c4bc27f4b0-2" vertex="1">
+          <mxGeometry x="30" y="100" width="55" height="110" as="geometry" 
+/>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-3" value=":Eyleyici" 
+style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;size=50;" 
+parent="1" vertex="1">
+          <mxGeometry x="390" y="80" width="100" height="250" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-13" value="" 
+style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" 
+parent="7baba1c4bc27f4b0-3" vertex="1">
+          <mxGeometry x="27.5" y="110" width="45" height="100" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-7" value=":Object" 
+style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" 
+parent="1" vertex="1">
+          <mxGeometry x="960" y="80" width="100" height="580" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-8" value=":AkilliCihaz" 
+style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" 
+parent="1" vertex="1">
+          <mxGeometry x="100" y="80" width="100" height="400" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-9" value="" 
+style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" 
+parent="7baba1c4bc27f4b0-8" vertex="1">
+          <mxGeometry x="45" y="100" width="10" height="170" as="geometry" 
+/>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-25" value="" 
+style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;fontFamily=Verdana;fontSize=12;fontColor=#000000;align=center;" 
+parent="1" vertex="1">
+          <mxGeometry x="1005" y="460" width="10" height="30" 
+as="geometry" />
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-11" value="sogutucuAc()" 
+style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" 
+parent="1" source="7baba1c4bc27f4b0-9" target="7baba1c4bc27f4b0-10" 
+edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-14" value="sogutucuAc()" 
+style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;labelBackgroundColor=none;fontFamily=Verdana;fontSize=12;edgeStyle=elbowEdgeStyle;elbow=vertical;" 
+parent="1" source="7baba1c4bc27f4b0-10" target="7baba1c4bc27f4b0-13" 
+edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-40" value="Soğutucunun 
+Çalıştırılması" 
+style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" 
+parent="1" vertex="1">
+          <mxGeometry x="100" y="30" width="100" height="35" as="geometry" 
+/>
+        </mxCell>
+        <mxCell id="7baba1c4bc27f4b0-46" value="Note" 
+style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" 
+parent="1" vertex="1">
+          <mxGeometry x="960" y="30" width="100" height="35" as="geometry" 
+/>
+        </mxCell>
+        <mxCell id="pioPp_-246U_8kxWxwZ7-3" value="" 
+style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" 
+parent="1">
+          <mxGeometry x="-0.4" width="80" relative="1" as="geometry">
+            <mxPoint x="260" y="260" as="sourcePoint" />
+            <mxPoint x="160" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="260" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pioPp_-246U_8kxWxwZ7-7" value="" 
+style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" 
+parent="1">
+          <mxGeometry x="0.3846" width="80" relative="1" as="geometry">
+            <mxPoint x="380" y="260" as="sourcePoint" />
+            <mxPoint x="320" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="260" />
+              <mxPoint x="410" y="260" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -14,7 +14,7 @@ public class SicaklikAlgilayici2 implements ISicaklikAlgilayici{
 
     @Override
     public void sicaklikOku() {
-        System.out.println("2 | Sicaklik Degeri " + sicaklik);        
+        System.out.println("Y | Sicaklik Degeri " + sicaklik);        
     }
 
     @Override

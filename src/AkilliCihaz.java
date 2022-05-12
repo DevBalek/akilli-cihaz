@@ -9,18 +9,17 @@ public class AkilliCihaz {
 
     public static void main(String[] args) throws Exception {
         durum = Durum.acilisTestiYapiliyor;
-        String secim = " ";
+        String secim;
         
         
         System.out.println("Sistem Acildi");
         
         durum = Durum.bekleme;
         
-        // durum = Durum.servisDisi;
+
         IVeritabaniSurucusu veritabaniSurucusu = new PostgreVeritabaniSurucusu();
-        
-        
-        
+
+        // durum = Durum.servisDisi;
         if(durum == Durum.servisDisi){
             System.out.println("Sistem Servis Disidir.");
             System.exit(1);

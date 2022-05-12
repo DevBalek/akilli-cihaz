@@ -32,9 +32,9 @@ public class MerkeziIslemUnitesi {
     }
 
     public void sistemiBaslat() throws InterruptedException {
-        AkilliCihaz.durum = Durum.bekleme;
-        
-        System.out.println("Giris Basarili...");
+        AkilliCihaz.durum = Durum.bekleme; 
+        System.out.println("\nYönlendiriliyorsunuz...");
+        Thread.sleep(1000);               
         secenekler();
 
     }
@@ -42,10 +42,10 @@ public class MerkeziIslemUnitesi {
     void secenekler() throws InterruptedException {
 
         String secim;
-        
+
         try (Scanner scanner = new Scanner(System.in)) {
             do {
-                clearScreen();
+                // clearScreen();
                 System.out.println("\n-----\nMerkezi Islem Unitesi\n-----\n1 - Sicaklik Goruntule \n2 - Soğutucu Aç\n3 - Soğutucu Kapat\n------\nq-Oturum Sonlandir");
                 
 
